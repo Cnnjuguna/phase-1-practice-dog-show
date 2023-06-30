@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <title>WKC Dog Show</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <script src="./src/index.js"></script>
     <link rel="stylesheet" href="./assets/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans" rel="stylesheet" />
   </head>
@@ -15,10 +14,10 @@
       <div class="margin flex">
         <h4 class='center'>Edit Existing Dog</h4>
         <form id='dog-form' class="padding margin border-round border-grey">
-          <input type="text" name="name" placeholder="dog's name" value="" />
-          <input type="text" name="breed" placeholder="dog's breed" value="" />
-          <input type="text" name="sex" placeholder="dog's sex" value="" />
-          <input type="submit" value="Submit" />
+          <input type="text" name="name"  placeholder="dog's name" value="" />
+          <input type="text" name="breed"  placeholder="breed" />
+          <input type="text" name="sex"  placeholder="sex" value="" />
+          <input type="submit" name="submit" value="Submit" />
         </form>
       </div>
 
@@ -38,5 +37,6 @@
         </table>
       </div>
     </div>
+    <script src="./src/index.js"></script>
   </body>
 </html>
