@@ -64,8 +64,9 @@ async function renderDogsTable() {
         row.appendChild(editButton);
         dogTableContent.appendChild(row);
   
-        // Clicking on the edit button next to a dog should populate
-        // the top form with that dog's current information.
+// Clicking on the edit button next to a dog should populate
+// the top form with that dog's current information.
+
         editButton.addEventListener('click', async () => {
           const updateDog = await updateTheDogForm(dog);
           if(updateDog) {
@@ -89,6 +90,7 @@ async function renderDogsTable() {
 
 
 // --------------Updating the details on the server------------//
+
 
 async function updateDogServer(dogSelected) {
     const dogId = dogSelected.id;
@@ -116,7 +118,7 @@ async function updateDogServer(dogSelected) {
     }
   }
   
-//   Make sure to replace the updateDogServer function in your code with the updated version provided above.
+//  Make sure to replace the updateDogServer function in your code with the updated version provided above.
 //  This should properly send the PATCH request with the dog information to update it on the server.
   
 
@@ -135,7 +137,7 @@ async function updateTheDogForm(dogSelected) {
   
     try {
       const response = await fetch(Endpoint, {
-        method: 'PATCH', // Updated from GET to PATCH
+        method: 'PATCH', 
         headers: {
           'Content-Type': 'application/json',
           Accept: 'application/json',
@@ -160,9 +162,10 @@ async function updateTheDogForm(dogSelected) {
 
 
 
-    // On submit of the form, a PATCH request should
+// On submit of the form, a PATCH request should
 //  be made to http://localhost:3000/dogs/:id to
 //  update the dog information
+
 const submitButton = document.querySelector('input[name="submit"]');
 submitButton.addEventListener('click', async (e) => {
     e.preventDefault();
